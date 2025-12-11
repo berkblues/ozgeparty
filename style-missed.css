@@ -1,0 +1,38 @@
+.missed-words-section {
+    margin-top: 20px;
+    background: #111;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    border: 1px solid #333;
+}
+
+.missed-words-section h3 {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+.missed-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.word-tag.missed {
+    background-color: #333;
+    color: #999;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border: 1px solid #444;
+}
+
+.more-count {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    padding: 5px;
+}

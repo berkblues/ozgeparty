@@ -1,0 +1,48 @@
+.menu-buttons button {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    transition: transform 0.15s ease, background 0.2s;
+}
+
+.menu-buttons button:hover {
+    transform: translateY(-2px);
+}
+
+.menu-buttons button:active {
+    transform: translateY(1px);
+}
+
+/* Ensure start menu is solid background and on top */
+.overlay.start-menu {
+    background-color: var(--bg-color);
+    /* Matches body background */
+    z-index: 200;
+}
+
+/* Nickname Input Styling */
+#nickname-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    background: #333;
+    border: 2px solid #444;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-family: var(--font-main);
+    transition: all 0.2s;
+}
+
+#nickname-input:focus {
+    outline: none;
+    border-color: var(--brand-red);
+    background: #222;
+}
+
+#nickname-input::placeholder {
+    color: #777;
+}

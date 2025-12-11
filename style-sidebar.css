@@ -1,0 +1,75 @@
+/* Wrapper for sidebar layout */
+.layout-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1000px;
+    height: 100vh;
+}
+
+/* Update app container to fit in wrapper */
+.app-container {
+    flex: 1;
+    max-width: 600px;
+}
+
+/* High Score Panel Styling */
+.high-score-panel {
+    width: 250px;
+    background: #1a1a1a;
+    border-left: 1px solid #333;
+    height: 100vh;
+    padding: 30px 20px;
+    display: none;
+    /* Hidden on mobile by default */
+    flex-direction: column;
+}
+
+.high-score-panel h3 {
+    font-size: 1.1rem;
+    color: var(--brand-red);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.high-score-list {
+    list-style: none;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.high-score-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #333;
+    font-size: 0.95rem;
+    color: #dfdfdf;
+}
+
+.high-score-list li .score {
+    font-weight: 700;
+    color: var(--brand-red);
+}
+
+.high-score-list li .date {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.empty-message {
+    color: #555;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Desktop Media Query */
+@media (min-width: 900px) {
+    .high-score-panel {
+        display: flex;
+    }
+}
